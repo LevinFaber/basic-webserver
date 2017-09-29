@@ -70,10 +70,15 @@ $(document).ready(function () {
 
 
     //VAC COUNTER
-
     $.get("/vac", function(data, status){
         console.log(data)
         $("#vaccounter").html(`${data}`);
     });
+
+    //DOTA STATS
+    //EST MMR
+    $.get("/mmr", function(data, status){
+        $("#dota").html(`${data}`);
+    })
 
 });
