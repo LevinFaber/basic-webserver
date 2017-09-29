@@ -46,6 +46,11 @@ var mmr = 0;
 var wl = 0;
 function getStats() {
     var stats = {}
+    var url = "https://api.opendota.com/api/players/117438595"
+    request.get(url, function(error, response, body){
+        ans = JSON.parse(body);
+        mmr = ans.mmr_estimate.estimate;
+    })
 };
 getStats();
 

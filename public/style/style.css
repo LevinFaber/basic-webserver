@@ -181,6 +181,13 @@ label {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+#dota {
+    background-image: url("/assets/dota.svg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 #vaccounter p {
     vertical-align: middle;
 }
