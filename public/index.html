@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>Levin Faber</title>
+    <meta name="theme-color" content="#317EFB" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Raleway" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="background">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#socialspacer">Social Media</a></li>
+            </ul>
+            <a class="barcode">Stylistic Element</a>
+        </nav>
+        <section id="home">
+            <h1>Welcome!</h1>
+            <img src="./assets/dumbledumb.jpg" alt="Dumbledumb" class="bild" id="me">
+        </section>
+        <div class="wrapper">
+            <a id="socialspacer" href="#socialspacer">
+                <i id="arrow" class="fa fa-angle-double-down fa-3x"></i>
+            </a>
+        </div>
+        <section id="socialmedia">
+
+                <div class="channel" id="youtube">
+                    <img src="./assets/youtube.svg"></img>
+                    <a href="youtube.com">YouTube</a>                    
+                </div>
+
+                <div class="channel" id="steam">
+                    <img src="./assets/steam.svg"></img>
+                    <a href="Steam.com">Steam</a>
+                </div>
+
+                <div class="channel" id="whatsapp">
+                    <img src="./assets/whatsapp.svg"></img>
+                    <a href="whatsapp.com">WhatsApp</a>
+                </div>
+
+                <div class="channel" id="gmail">
+                    <img src="./assets/gmail.svg"></img>
+                    <a href="gmail.com">GMail</a>
+                </div>
+
+            <div id="contentwrapper" class="wrapper">
+
+                <div id="preview">
+                    <h2>Click the above icons for more info!</h2>
+                </div>
+
+                <br>
+                
+                <div class="aspect-ratio">
+                    <iframe id="youtubeC" src="https://www.youtube.com/embed/yZnBQTe9KFg"></iframe>
+                </div>
+                
+
+                <iframe id="steamC" src="http://steamcommunity.com/id/dumbledumb"></iframe>
+
+                <div id="whatsappC">
+                    <form id="waform" method="post" action="mailer.php">
+                        <label for="cname">Name:</label>
+                        <input type="text" name="Name" id="cname" placeholder="Name" minlength="3" required>
+                        <label for="cemail">Email:</label>
+                        <input type="email" name="email" id="cemail" placeholder="example@email.com" required>
+                        <label for="ctel">Phone:</label>
+                        <input type="digits" name="Phonenumber" id="ctel" placeholder="Your Phonenumber" required>
+                        <label for="cmsg">Message:</label>
+                        <textarea name="Message" id="cmsg" cols="30" rows="10" placeholder="Message" required></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+
+                <div id="gmailC"></div>
+            </div>
+        </section>
+        <footer>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="https://use.fontawesome.com/e8f025acaa.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+    <script src="/js/apis.js"></script>
+</body>
+</html>

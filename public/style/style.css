@@ -1,0 +1,205 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    color: #565D64;
+    background-image: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    height: 8vh;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(214, 214, 214, 0.89);
+    overflow: hidden;
+    z-index: 2;
+}
+
+div {
+    width: auto;
+    display: block;
+}
+
+div.channel {
+    display: inline-block;
+    font-size: 200%;
+    padding: 2vh;
+    text-align: center;
+}
+
+img {
+    box-sizing: content-box;
+    background-color: white;
+    border: 2vh solid white;
+    border-radius: 50%;
+    width: 15vh;
+    height: 15vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img.qr {
+    border-radius: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+li {
+    font-size: 4vh;
+    padding: 2vh;
+    display: inline-block;
+    width: auto;
+    height: 8vh;
+}
+  
+a {
+    text-decoration: none;
+    margin-bottom: auto;
+}
+
+i {
+    color: rgba(219, 219, 219, 1);
+    opacity: 0.6;
+}
+
+iframe {
+    width: 100%;
+    height: 60vh;
+    border: 0;
+    display: none;
+    margin: auto;
+}
+
+form {
+    width: 85%;
+    margin: auto;
+}
+
+input,
+textarea,
+label {
+    float: left;
+    clear: both;
+}
+
+/* CLASSES */
+.error {
+    color: #9C0000;
+}
+
+.barcode {
+    font-family: 'Libre Barcode 39 Text', cursive;
+    font-size: 270%;
+    display: inline;
+    padding: 2vh;
+}
+
+.scrd {
+    margin-top: auto;
+}
+
+.aspect-ratio {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 51%;
+    display: none;
+}
+
+.aspect-ratio iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0; top: 0;
+
+  }
+
+/* IDS */
+
+#background {
+    background-image: url("/assets/backgroundmedium.jpg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+}
+
+
+#home {
+    height: 75vh;
+    font-size: 250%;
+    text-align: center;
+    padding-top: 12vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#me {
+    width: 200px;
+    height: 200px;
+    border: 0;
+}
+
+#socialspacer {
+    padding-top: 8vh;
+    font-size: 250%;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+#socialmedia {
+    margin: auto;
+    padding: 4vh 1vh;
+    height: auto;
+    min-height: 100vh;
+    width: 90%;
+    background-color: rgba(214, 214, 214, 0.89);
+    border-radius: 1vh;
+    text-align: center;
+}
+
+#whatsappC {
+    display: none;
+    width: 85%;
+}
+
+
+/* MEDIA */
+@media screen and (min-width: 1548px) {
+    #background {
+        background-image: url("/assets/backgroundlarge.jpg");
+    }
+}
+
+@media screen and (orientation: portrait) {
+    #background {
+        background-image: url("/assets/backgroundportrait.jpg");
+    }
+    img {
+        box-sizing: content-box;
+        background-color: white;
+        border: 2vw solid white;
+        border-radius: 50%;
+        width: 15vw;
+        height: 15vw;
+        display: block;
+    }
+    div.channel {
+        font-size: 4vw;
+    }
+    li {
+        font-size: 6vw;
+    }
+}
