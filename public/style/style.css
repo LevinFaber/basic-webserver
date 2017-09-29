@@ -9,6 +9,14 @@ body {
     margin: 0;
 }
 
+h1 {
+    margin: 0;
+}
+
+p {
+    color: #FFFFFF;
+}
+
 nav {
     margin: 0;
     padding: 0;
@@ -40,12 +48,16 @@ img {
     width: 15vh;
     height: 15vh;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 img.qr {
     border-radius: 0;
+}
+
+span {
+    font-family: monospace;
+    font-size: 270%;
+    color: #FFFFFF;
 }
 
 ul {
@@ -97,6 +109,11 @@ label {
     color: #9C0000;
 }
 
+.titlecontent {
+    display: block;
+    grid-auto-flow: column;
+}
+
 .barcode {
     font-family: 'Libre Barcode 39 Text', cursive;
     font-size: 270%;
@@ -122,7 +139,7 @@ label {
     height: 100%;
     left: 0; top: 0;
 
-  }
+}
 
 /* IDS */
 
@@ -149,6 +166,23 @@ label {
     width: 200px;
     height: 200px;
     border: 0;
+    display: inline-block;
+}
+
+#titlearea {
+    display: grid;
+    grid-auto-flow: column;
+    padding: 5%;
+}
+#vaccounter {
+    float: right;
+    background-image: url("/assets/steam.svg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#vaccounter p {
+    vertical-align: middle;
 }
 
 #socialspacer {
