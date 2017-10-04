@@ -21,7 +21,6 @@ $(document).ready(function () {
     var activeIframe = "preview";
     $(".channel").click(function(){
         var ident = this.id;
-        console.log(ident)
         $("#contentwrapper").children().hide();
         if(activeIframe === ident){
             $("#preview").show();
@@ -71,14 +70,41 @@ $(document).ready(function () {
 
     //VAC COUNTER
     $.get("/vac", function(data, status){
-        console.log(data)
-        $("#vaccounter").html(`${data}`);
+        $(".vac").html(`${data}`);
     });
 
     //DOTA STATS
     //EST MMR
     $.get("/mmr", function(data, status){
-        $("#dota").html(`${data}`);
+        $(".mmr").html(`${data}`);
+    })
+    //LAST game WON
+    $.get("/outcome", function(data, status){
+        if(data === true){
+            $(".outcome").html("Won!");
+            $(".outcome").addClass("green");
+        }
+        else{
+            $(".outcome").html("Lost!");
+            $(".outcome").addClass("red");
+        }
+    })
+    //KDA
+    $.get("/kda", function(data, status){
+        $(".kills").html(data[0]);
+        $(".deaths").html(data[1]);
+        $(".assists").html(data[2]);
+    })
+    //last HERO
+    $.get("/hero", function(data, status){
+        $(".hero").html(`${data}`);
+    })
+    //WL ratio
+    $.get("/wl", function(data, status){
+        $(".wl").html(data[0]);
+        data[0] > 1 ?  $(".wl").addClass("green") :  $(".wl").addClass("red") 
+        $(".wins").html(data[1]);
+        $(".losses").html(data[2]);
     })
 
 });

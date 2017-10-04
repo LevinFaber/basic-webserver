@@ -13,8 +13,19 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    color: #FFFFFF;
+    font-size: 175%;
+}
+
+h3 {
+    color: #76797A;
+    margin: 0;
+}
+
 p {
     color: #FFFFFF;
+    margin: 0;
 }
 
 nav {
@@ -104,6 +115,10 @@ label {
     clear: both;
 }
 
+table {
+    width: 100%
+}
+
 /* CLASSES */
 .error {
     color: #9C0000;
@@ -112,15 +127,17 @@ label {
 .titlecontent {
     display: block;
     grid-auto-flow: column;
+    padding: 20px;
 }
 
-.barcode {
-    font-family: 'Libre Barcode 39 Text', cursive;
-    font-size: 270%;
-    display: inline;
-    padding: 2vh;
+.inmenu {
+    border: 0;
+    border-radius: 0;
+    background: none;
+    height: auto;
+    width: auto;
+    margin: -2vh;
 }
-
 .scrd {
     margin-top: auto;
 }
@@ -141,6 +158,42 @@ label {
 
 }
 
+.dota {
+    background-image: url("/assets/dota.svg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.wl {
+    width: 30%;
+    display: inline-block;
+}
+
+.stats {
+    width: 45%;
+    justify-content: space-around;
+    display: inline-block;
+}
+
+.outcome {
+    grid-column: 3;
+    grid-row: 2;
+    font-size: 200%;
+}
+
+.as {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.red {
+    color: #B90101;
+}
+
+.green {
+    color: #008800;
+}
 /* IDS */
 
 #background {
@@ -172,6 +225,7 @@ label {
 #titlearea {
     display: grid;
     grid-auto-flow: column;
+    grid-template-columns: 33% 34% 33%;
     padding: 5%;
 }
 #vaccounter {
@@ -182,12 +236,6 @@ label {
     background-position: center;
 }
 
-#dota {
-    background-image: url("/assets/dota.svg");
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 #vaccounter p {
     vertical-align: middle;
 }
@@ -215,6 +263,56 @@ label {
     display: none;
     width: 85%;
 }
+
+#dota {
+    background-color: rgba(33, 37, 41, 0.8);
+    width: 70%;
+    height: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1vh;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    text-align: center;
+}
+
+#glob {
+    grid-column:  1 / span 2;
+
+}
+
+#last {
+    grid-column: 3 / span 4;
+    grid-row: 1;
+
+}
+
+#statsmmr {
+    grid-column: 1 / span 2;
+}
+
+#wins {
+    grid-column: 1;
+    grid-row: 3 / span;
+}
+
+#losses {
+    grid-column: 2;
+    grid-row: 3 / span;
+}
+
+#wl {
+    grid-column: 1 / span 2;
+}
+
+#kda {
+    grid-column: 3 / span 4;
+    grid-row: 3;
+    display: flex;
+    justify-content: space-around;
+}
+
+
 
 
 /* MEDIA */

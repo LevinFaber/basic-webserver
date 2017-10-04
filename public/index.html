@@ -19,15 +19,14 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#socialspacer">Social Media</a></li>
             </ul>
-            <a class="barcode">Stylistic Element</a>
         </nav>
         <section id="home">
             
             <div id="titlearea">
-                <div class="titlecontent" id="dota"><p>CONTENT</p></div>
+                <div class="titlecontent dota"><p>EST. MMR:<br><span class="mmr"></span></p></div>
                 <div class="titlecontent"><h1>Welcome!</h1>
                     <img src="./assets/dumbledumb.jpg" alt="Dumbledumb" class="bild" id="me"></div>
-                <div class="titlecontent" id="vaccounter"></div>
+                <div class="titlecontent" id="vaccounter"><p>Clean since <br><span class="vac"></span><br> days!</p></div>
             </div>
         </section>
         <div class="wrapper">
@@ -88,12 +87,26 @@
 
                 <div id="gmailC"></div>
             </div>
-        </section>
+        
         <section id="dota">
-
-
+                
+            <h2 id="glob">Global Stats:</h2>            
+            <h3 id="statsmmr">MMR: <span class="mmr"></span></h3>            
+            <p id="wins">Wins: <br> <span class="wins green"></span></p>
+            <p id="losses">Losses: <br> <span class="losses red"></span></p>
+            <p id="wl">Ratio: <br> <span class="wl"></span></p   >
             
+            
+            <h2 id="last">Last Game:</h2>
+            <h3 class="outcome"></h3>
+            <h3 class="as">as:  <span class="hero">Heroo</span></h3>
+            <div id="kda">
+            <p id="kills" class="">Kills: <br> <span class="kills green">all</span></p>
+            <p id="deaths" class="">Deaths: <br> <span class="deaths red">00</span></p>
+            <p id="assists">Assists: <br><span class="assists">9099</p>
+            </div>
         </section>
+    </section>
         <footer>
         </footer>
     </div>
