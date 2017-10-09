@@ -3,8 +3,8 @@ var express = require('express');
 var app = express();
 var request = require('request');
 var playerID = 76561198077704323;
-var server_port = 80;
-var server_ip_address = '127.0.0.1';
+var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080
+var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
 
 var server = app.listen(server_port, server_ip_address, function () {
     var host = server.address().address
