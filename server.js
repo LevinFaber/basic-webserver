@@ -1,7 +1,3 @@
-//  OpenShift sample Node application
-
-Object.assign=require('object-assign');
-
 var nodeDotaApi = require('node-dota-api');
 var express = require('express');
 var app = express();
@@ -15,7 +11,7 @@ var server = app.listen(server_port, server_ip_address, function () {
     var port = server.address().port
     
     console.log("Webapp listening at http://%s:%s", server_ip_address, server_port)
-  });
+ });
 
 app.use(express.static("public"));
 app.get("/", function(req, res){

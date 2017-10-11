@@ -1,4 +1,11 @@
 $(document).ready(function () {
+
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js', { scope: './' })
+          .then(reg => console.info('registered sw', reg))
+          .catch(err => console.error('error registering sw', err));
+      }
+      
     //QR CODE
     var qr = false;
     $('#me').click(function () {
